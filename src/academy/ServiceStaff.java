@@ -9,11 +9,11 @@ public class ServiceStaff extends Staff {
 		super.input();
 	}
 
-	public String output() {
-		return super.output();
+	public int tinhLuong() {
+		return super.getLuongCoBan();
 	}
 
-	public double tinhLuong() {
-		return super.getLuongCoBan();
+	public String output() {
+		return super.output();
 	}
 }

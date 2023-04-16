@@ -72,11 +72,11 @@ public abstract class Staff {
 		System.out.print("Nhap luong can ban: ");
 		luongCoBan = scanner.nextInt();
 	}
+	
+	public abstract int tinhLuong();
 
 	public String output() {
-		return "Ma nhan vien: " + this.maNv + ", ten nhan vien: " + this.tenNv + ", trinh do: " + this.trinhDo
-				+ ", chuyen mon: " + this.chuyenMon + ", luong can ban: " + this.luongCoBan;
+		return "  + Ma nhan vien: " + this.maNv + ", ten nhan vien: " + this.tenNv + ", trinh do: " + this.trinhDo
+				+ ", chuyen mon: " + this.chuyenMon + ", luong can ban: " + this.luongCoBan + ", Luong: " + this.tinhLuong();
 	}
-
-	public abstract double tinhLuong();
 }

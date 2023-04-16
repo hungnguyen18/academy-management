@@ -29,11 +29,11 @@ public class ResearchStaff extends Staff {
 		phuCapDocHai = scanner.nextInt();
 	}
 
-	public String output() {
-		return super.output() + ", phu cap doc hai: " + this.phuCapDocHai;
+	public int tinhLuong() {
+		return super.getLuongCoBan() + this.phuCapDocHai;
 	}
 
-	public double tinhLuong() {
-		return super.getLuongCoBan() + this.phuCapDocHai;
+	public String output() {
+		return super.output() + ", phu cap doc hai: " + this.phuCapDocHai;
 	}
 }

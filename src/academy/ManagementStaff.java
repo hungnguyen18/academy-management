@@ -29,11 +29,13 @@ public class ManagementStaff extends Staff {
 		phuCapChucVu = scanner.nextInt();
 	}
 
+	public int tinhLuong() {
+		return super.getLuongCoBan() + this.phuCapChucVu;
+	}
+	
 	public String output() {
 		return super.output() + ", phu cap chuc vu: " + this.phuCapChucVu;
 	}
 
-	public double tinhLuong() {
-		return super.getLuongCoBan() + this.phuCapChucVu;
-	}
+	
 }
