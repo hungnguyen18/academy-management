@@ -1,11 +1,17 @@
 package academy;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Academy {
 	protected int quantity;
 	private int tongLuong;
 	Scanner scanner = new Scanner(System.in);
+	
+	public String withLargeIntegers(double value) {
+	    DecimalFormat df = new DecimalFormat("###,###,###");
+	    return df.format(value);
+	}
 
 	public void run() {
 		System.out.print("Nhap so luong nhan vien: ");
@@ -48,7 +54,7 @@ public class Academy {
 			tongLuong += staff[i].tinhLuong();
 		}
 
-		System.out.print("\n----------------------\nTong luong tat ca nhan vien: " + tongLuong);
+		System.out.print("\n----------------------\nTong luong tat ca nhan vien: " + withLargeIntegers(tongLuong));
 
 	}
 }
