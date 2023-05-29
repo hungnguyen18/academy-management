@@ -29,11 +29,16 @@ public class ResearchStaff extends Staff {
 		phuCapDocHai = scanner.nextInt();
 	}
 
-	public int tinhLuong() {
+	public int payRoll() {
 		return super.getLuongCoBan() + this.phuCapDocHai;
 	}
 
 	public String output() {
 		return super.output() + ", phu cap doc hai: " + this.phuCapDocHai;
+	}
+
+	public int compareTo(Staff o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

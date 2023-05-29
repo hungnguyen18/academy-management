@@ -9,11 +9,16 @@ public class ServiceStaff extends Staff {
 		super.input();
 	}
 
-	public int tinhLuong() {
+	public int payRoll() {
 		return super.getLuongCoBan();
 	}
 
 	public String output() {
 		return super.output();
+	}
+
+	public int compareTo(Staff o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

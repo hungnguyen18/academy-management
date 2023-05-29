@@ -2,7 +2,7 @@ package academy;
 
 import java.util.Scanner;
 
-public abstract class Staff {
+public abstract class Staff implements Comparable<Staff> {
 	private String maNv, tenNv, trinhDo, chuyenMon;
 	private int luongCoBan;
 	protected Scanner scanner = new Scanner(System.in);
@@ -72,11 +72,23 @@ public abstract class Staff {
 		System.out.print("Nhap luong can ban: ");
 		luongCoBan = scanner.nextInt();
 	}
-	
-	public abstract int tinhLuong();
+
+	public abstract int payRoll();
+
+
+//	public int compareTo(Staff other) {
+//		if (this.payRoll() > other.payRoll()) {
+//			return -1;
+//		} else if (this.payRoll() == other.payRoll()) {
+//			return 0;
+//		} else {
+//			return 1;
+//		}
+//	}
 
 	public String output() {
 		return "  + Ma nhan vien: " + this.maNv + ", ten nhan vien: " + this.tenNv + ", trinh do: " + this.trinhDo
-				+ ", chuyen mon: " + this.chuyenMon + ", luong can ban: " + this.luongCoBan + ", Luong: " + this.tinhLuong();
+				+ ", chuyen mon: " + this.chuyenMon + ", luong can ban: " + this.luongCoBan + ", Luong: "
+				+ this.payRoll();
 	}
 }
