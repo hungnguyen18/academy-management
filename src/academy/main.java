@@ -8,9 +8,9 @@ public class main {
 		Academy academy = new Academy();
 		academy.run();
 		
-		// Before sort
+		// After sort
 		System.out.println("\n------------------------------\n");
-		System.out.println("Before use method quick sort");
+		System.out.println("After use method quick sort");
 		academy.sort();
 	}
 
